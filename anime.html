@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Berserk Anime API</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./bootstrap/js/bootstrap.bundle.min.js" defer></script>
+    <script src="./js/anime-api.js" defer></script>
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/png" />
+  </head>
+  <body>
+    <!-- NAV -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-black border-bottom border-danger"
+    >
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="./index.html">Berserk</a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="./index.html"> Home </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="./anime.html"> Anime API </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- MAIN -->
+    <section class="py-5 text-white">
+      <div class="container text-center">
+        <h1 class="display-4 fw-bold mb-4">Berserk Anime Information</h1>
+        <p class="lead mb-5">
+          Click the button below to load data from an anime API.
+        </p>
+        <button id="loadAnimeBtn" class="btn btn-danger btn-lg">
+          Load Anime Info
+        </button>
+
+        <!-- LOADING -->
+        <div id="loadingSpinner" class="mt-4 d-none">
+          <div class="spinner-border text-danger"></div>
+        </div>
+        <!-- RESULT -->
+        <div id="animeContainer" class="mt-5"></div>
+      </div>
+    </section>
+    <footer
+      class="text-white bg-black py-4 text-center border-top border-danger"
+    >
+      <div class="container">
+        <p class="mb-0">Berserk Fan Project © 2026</p>
+      </div>
+    </footer>
+  </body>
+</html>
