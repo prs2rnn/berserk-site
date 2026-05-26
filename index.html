@@ -11,33 +11,53 @@
     <link rel="shortcut icon" href="./img/favicon.png" type="image/png" />
   </head>
   <body>
-    <section class="hero">
+    <!-- NAV -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-black border-bottom border-danger"
+    >
       <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <h1 class="fw-bold text-center display-2">Guts</h1>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-6">
-            <figure>
-              <img
-                src="./img/guts.jpg"
-                alt="Guts sits"
-                class="img-fluid img-thumbnail"
-              />
-              <figcaption>The Black Swordsman from Berserk 1997</figcaption>
-            </figure>
-          </div>
-        </div>
-        <div class="row text-center">
-          <div class="col-12">
-            <a class="btn btn-primary btn-lg mt-2 mb-2" href="#" role="button"
-              >Explore Anime Data</a
-            >
-          </div>
+        <a class="navbar-brand fw-bold" href="#">Berserk</a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="./index.html"> Home </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="./anime.html"> Anime API </a>
+            </li>
+          </ul>
         </div>
       </div>
+    </nav>
+    <!-- HERO -->
+    <section class="hero text-white d-flex align-items-center">
+      <div class="container text-center">
+        <h1 class="display-2 fw-bold">Guts</h1>
+
+        <p class="lead">The Black Swordsman from Berserk 1997</p>
+
+        <a href="./anime.html" class="btn btn-danger btn-lg mt-3">
+          Explore Anime Data
+        </a>
+      </div>
     </section>
+    <!-- ABOUT -->
+    <section class="about"></section>
+    <!-- CHARACTER CARDS  -->
+    <section class="cards"></section>
+    <!-- QUOTE  -->
+    <section class="quote"></section>
+    <footer></footer>
   </body>
 </html>
