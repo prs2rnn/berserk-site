@@ -8,8 +8,10 @@
   }
 
   loadComponent("navbar-container", "./components/navbar.html").then(() => {
-    const currentPage = window.location.pathname.split("/").pop();
-
+    let currentPage = window.location.pathname.split("/").pop();
+    if (currentPage === "") {
+      currentPage = "index.html";
+    }
     const navLinks = document.querySelectorAll(".nav-link");
 
     navLinks.forEach((link) => {
